@@ -1,0 +1,2 @@
+# Encrypted_chat_Program
+基于Socket打造的一款简单的属于自己的AES加密聊天应用程序
