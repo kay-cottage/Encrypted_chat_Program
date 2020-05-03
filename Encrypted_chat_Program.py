@@ -70,7 +70,7 @@ def main():
   a = input('请输入该密钥：').encode("utf8")
   b = hashlib.sha256(a).hexdigest()
   c = hashlib.sha256(b.encode("utf8")).hexdigest()
-  key = d[6:38].encode('utf8')
+  key = c[6:38].encode('utf8')
   udpsocket = socket(AF_INET, SOCK_DGRAM)
   udpsocket.bind(("", locport))
   print('######################已经成功创建socket#####################')
