@@ -65,8 +65,7 @@ def main():
   desport = int(input("对方端口（默认33333）："))
   print('以下请正确输入与好友约定的密钥')
   print('该密钥可以是几乎任意定长的字符串！')
-  
-  #两次SHA生成密钥。此部分可自定义修改，例如可以使用RSA生成密钥key
+   #两次SHA生成密钥。此部分可自定义修改，例如可以使用RSA生成密钥key，或者推荐使用D-H密钥交换算法
   a = input('请输入该密钥：').encode("utf8")
   b = hashlib.sha256(a).hexdigest()
   c = hashlib.sha256(b.encode("utf8")).hexdigest()
